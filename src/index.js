@@ -20,7 +20,7 @@ function renderLaunches(launches, container){
     launches.forEach(launch=>{
         const item = document.createElement("li");
         item.innerHTML = launch.name;
-        item.addEventListener("click", changeColor, false);
+        item.addEventListener("mouseover", changeColor, false);
         item.launchPadId = launch.launchpad
         list.appendChild(item);
     })
